@@ -7,3 +7,6 @@
 - Proceso TO-BE:
 - Dentro:
 - Fuera:
+
+## B. Fuentes y necesidades
+| 
