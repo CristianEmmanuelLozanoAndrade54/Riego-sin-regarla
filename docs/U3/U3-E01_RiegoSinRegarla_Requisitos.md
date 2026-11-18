@@ -414,30 +414,25 @@ El backlog queda relacionado con las actividades de Trello y con el catálogo de
 
 La matriz permite relacionar las fuentes de información con las necesidades identificadas, los requisitos propuestos, sus criterios de aceptación y el boceto elaborado en ACT-72. También permite identificar las relaciones que se encuentran incompletas y los aspectos que requieren revisión.
 
-|
+| ID req | Fuente | Necesidad asociada | Criterio de aceptación | Relación con el boceto | Estado |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| RF-ANA-01 | F-02, F-03 | N-08: Contar con un historial de cambios de flujo. | Registrar zona origen, zona destino, fecha y hora del cambio realizado. | Parcial. El boceto contempla controles de compuerta, pero no muestra una consulta al historial de cambios. | Requiere complementar el boceto. |
+| RF-ANA-02 | F-04 | Conservar los registros de cambios de flujo después de cerrar y volver a iniciar la aplicación. | Los registros deben permanecer disponibles después de reiniciar la aplicación. | Indirecta. La conservación de información no se representa visualmente en el boceto. | Relación documentada. Pendiente de revisión técnica. |
+| RF-GENESIS-01 | F-02, F-03 | N-07: Contemplar una respuesta ante lecturas incorrectas del sensor. | Descartar la lectura no confiable, notificar al encargado y evitar utilizarla en la evaluación | Parcial. El boceto incluye notificaciones, pero no representa claramente el procedimiento de validación de lecturas | Requiere complementar el recorrido. |
+| RF-GENESIS-02 | F-02 | N-08: Contar con un historial de las zonas regadas | Registrar la identificación de la zona y la fecha y hora de confirmación. | No visible. No se muestra una pantalla de consulta de zonas regadas. | Requiere complementar el boceto. |
+| RF-CRISTIAN-01 | F-02, F-03 | N-02 y N-03: Determinar si una zona recibió suficiente agua considerando el nivel, tiempo y terreno. | Evaluar las condiciones con una lectura válida y los parámetros establecidos para la zona. | Parcial. El boceto muestra el control de compuertas, pero no presenta el nivel del agua ni el resultado de la evaluación. | Requiere complementar el boceto. |
+| RF-CRISTIAN-02 | F-02, F-03 | N-06: Notificar al productor y permitirle autorizar el cambio de flujo. | Notificar cuando se cumplan las condiciones y esperar la autorización antes de realizar el cambio. | Parcial. Se muestra una bandeja de notificaciones y controles de compuerta, pero no el proceso de autorización del cambio de zona. | Requiere complementar el boceto. |
 
-### H.2 Historial de cambios
+### H.2 Cambios y pendientes
 
-| Versión | Fecha | Cambio realizado | Responsable |
-| --- | --- | --- | --- |
-| 0.1 | 03/11/2026 | Creación de la estructura inicial A-I y documentación preliminar del alcance, fuentes y requisitos. | Equipo Webtons |
-| 0.2 | Pendiente | Incorporación de resultados de consultas y validación de requisitos. | Por asignar |
-| 1.0 | Pendiente | Revisión final e integración de la especificación del equipo. | Por asignar |
-
-### H.3 Revisión entre pares
-
-Antes de considerar validado un requisito, otro integrante deberá revisar:
-
-- Que el requisito describa una sola necesidad.
-- Que su redacción sea clara y verificable.
-- Que tenga una fuente identificada.
-- Que la prioridad esté justificada.
-- Que tenga un criterio de aceptación.
-- Que no duplique una regla del dominio o algún otro requisito.
-
-Los cambios deberán registrarse en el historial y reflejarse tanto en el catálogo como en los criterios de aceptación y la matriz de trazabilidad.
-
-**Estado de revisión:** Pendiente de revisión entre integrantes.
+| Aspecto | Decisión o siguiente paso | Estado |
+| ---- | ---- | ---- |
+|Identificadores de requisitos | Mantener los identificadores del catálogo y corregir errores de escritura. | Corregido |
+| Criterios de aceptación | Mantener los criterios documentados en F y revisar que correspondan con cada requisito. | Integrados |
+| Boceto | Revisar las pantallas para relacionarlas con el recorrido prioritario y los requisitos. | Completado | 
+| Parámetros de riego | Definir valores y referencias para evaluar las condiciones de cada zona | Pendiente |
+| Validación de sensores | Definir criterios técnicos para identificar lecturas no confiables | Pendiente |
+Conservación de registros | Revisar la solución técnica para mantener la información después de cerrar la aplicación. | Pendiente |
 
 ---
 
@@ -445,44 +440,26 @@ Los cambios deberán registrarse en el historial y reflejarse tanto en el catál
 
 ### I.1 Fuentes del proyecto
 
-| Referencia | Descripción | Uso |
-| --- | --- | --- |
-| U2-E01 | Inicio del modelado del negocio — Proyecto XALTIL. Equipo Webtons, 07/10/2026. | Identificación del proceso AS-IS, TO-BE, stakeholders, necesidades y supuestos. |
-| SCC-1007 | Material de clase de la Unidad 3: Ingeniería de Requisitos. | Estructura documental, clasificación, priorización y criterios de aceptación. |
+- F-01. Entrevista inicial al productor, realizada el 03/09/2026
+- F-02. Segunda entrevista de seguimiento al productor, realizada el 15/11/2026.
+- F-03. Análisis del proceso y propuesta TO-BE del equipo, Unidad 2, 27/10/2026.
+- F-04. Propuesta técnica individual de Ana Cristina sobre conservación de registros.
 
 ### I.2 Herramientas utilizadas
 
-| Herramienta | Uso dentro del proyecto |
-| --- | --- |
-| GitHub | Control de versiones, almacenamiento de documentación y revisión de cambios mediante Pull Requests. |
-| Git | Administración de ramas y registro del historial de modificaciones. |
-| Trello | Organización de actividades, responsables, revisiones y seguimiento del backlog. |
-| Markdown | Elaboración de la especificación de requisitos. |
+| Herramienta | Proveedor | Uso dentro del proyecto | Enlace |
+| ---- | ---- | ---- | ---- |
+| Figma | Figma, Inc. | Elaboración del boceto y representación visual del recorrido principal del sistema | https://www.figma.com/make/WiKXpLWr7vupJOECNt3MyL/Interfaz-de-Riego-Natural?t=DipdOTpHiuYdy7GB-20&fullscreen=1 |
+| Trello | Atlassian | Organización de actividades, responsables y seguimiento del trabajo de equipo | https://trello.com/b/9fPSPRCr/riego-sin-regarla1 |
 
-**Enlaces oficiales:**
+### I.3 Documentos de apoyo 
 
-- GitHub: <https://github.com/>
+- ACT-71. Investigación y selección de herramienta para elaborar el boceto.
+- ACT-72. Elaboración del boceto del recorrido principal.
+- ACT-73. Elaboración de la matriz de trazabilidad.
+- ACT-67. Integración y revisión del catálogo de requisitos.
+- ACT-68. Revisión y definición de criterios de aceptación.
+- ACT-69. Asignación y justificación de prioridades.
+- ACT-70. Organización del backlog y sus dependencias.
 
-- Git: <https://git-scm.com/>
-
-- Trello: <https://trello.com/>
-
-- Markdown: <https://www.markdownguide.org/>
-
-### I.3 Consideraciones finales
-
-La presente especificación constituye el primer avance de requisitos del proyecto XALTIL.
-
-Su contenido parte del análisis del negocio realizado en U2 y establece una base para continuar con la obtención, análisis, priorización y validación de necesidades.
-
-Los requisitos identificados como pendientes deberán contrastarse con pacientes, familiares, personal administrativo y representantes de los centros de salud antes de considerarse definitivos.
-
-El equipo mantendrá este documento como la especificación integrada del proyecto, actualizándolo conforme se obtenga nueva evidencia y se realicen revisiones.
-
----
-
-**Documento elaborado por:** Equipo Webtons  
-**Proyecto:** XALTIL  
-**Materia:** Fundamentos de Ingeniería de Software  
-**Unidad:** 3 · Ingeniería de Requisitos  
-**Archivo:** `docs/U3/U3-E01_XALTIL_Requisitos.md`
+Las herramientas y documentos anteriores se utilizaron como apoyo para la elaboración y organización de la especificación de requisitos del proyecto.
