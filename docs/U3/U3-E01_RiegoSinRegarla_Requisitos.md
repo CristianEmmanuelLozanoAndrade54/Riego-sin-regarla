@@ -14,9 +14,6 @@
 - Lopez Medina Genesis Marisol -------- Desarrollo y coordinación
 - Bermejo Rodriguez Ana Cristina -------- Analisis
 
-**Responsable de integración:**  Jonnatan Martinez Aquino(desarrollo)
-**Responsable de revisión:**  Garcia Villegas Jorge Ignacion (Calidad y Docucemntacion)
-
 ---
 
 ## A. Identificación y alcance
