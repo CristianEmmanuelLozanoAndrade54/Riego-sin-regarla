@@ -20,10 +20,6 @@
 
 ### A.1 Identificación del proyecto
 
-XALTIL es una propuesta de plataforma web orientada a facilitar la consulta de disponibilidad y saturación de centros de salud. Su propósito es proporcionar información centralizada para que los pacientes y familiares puedan comparar opciones de atención antes de desplazarse.
-
-El sistema contempla mostrar información sobre los centros de salud cercanos, su nivel de saturación, el tiempo estimado de espera y el tiempo de traslado. También considera la posibilidad de solicitar un turno o cita cuando exista disponibilidad.
-
 ### A.2 Proceso TO-BE seleccionado
 
 **Proceso:** Supervisar condiciones de agua en zona nogalera
